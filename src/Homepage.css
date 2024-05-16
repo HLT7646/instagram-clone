@@ -1,0 +1,14 @@
+.homepage {
+  display: flex;
+  flex-direction: row;
+}
+
+.homepage__navWraper {
+  position: relative;
+  flex: 0.13;
+  border-right: 0.5px dotted #3b3b3b;
+}
+
+.homepage__timeline {
+  flex: 0.87;
+}

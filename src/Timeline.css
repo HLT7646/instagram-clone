@@ -1,0 +1,27 @@
+.timeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.timeline__left {
+margin-right: 50px;
+}
+
+.timeline__right {
+  margin-left: 110px;
+  width: 283px;
+}
+
+.reel{
+  display: flex;
+  margin-top: 25px;
+  gap:15px;
+}
+.reel span{
+  font-size: 12px;
+  color:#a8a8a8
+}
+.post{
+  margin-left: 100px;
+}
