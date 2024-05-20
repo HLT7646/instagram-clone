@@ -12,3 +12,31 @@
 .homepage__timeline {
   flex: 0.87;
 }
+
+@media screen and (max-width: 1200px) {
+  .homepage__navWraper {
+    min-width: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage__navWraper {
+    display: none;
+  }
+
+  .homepage {
+    justify-content: center;
+  }
+
+  .homepage__bottomnav {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top:0.5px dotted #3b3b3b;
+    background-color: #000;
+    z-index: 9999;
+    box-sizing: border-box;
+    padding-top: 10px;
+  }
+}
