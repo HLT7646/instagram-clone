@@ -3,37 +3,36 @@ import Post from "./Component/Post";
 import Suggestions from "./Suggestions";
 import { Avatar } from "@mui/material";
 import "./Timeline.css";
-
+import imgURL from "./img.jpg";
 function Timeline() {
   const [posts, setPosts] = useState([
     {
       user: "HLT",
-      postImage:
-      "https://scontent.cdninstagram.com/v/t39.30808-6/441318901_18415423714064311_4260111182971927085_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYzMDgwOCJ9&_nc_ht=scontent.cdninstagram.com&_nc_cat=107&_nc_ohc=0wXdSVvl6hYQ7kNvgHCmLGF&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzM2Nzg0NjM4OTM2NjAzNjg2MQ%3D%3D.2-ccb7-5&oh=00_AYC27DE6bFr4YYdTZ93I-ouKZKqvA416HXxUZtT-VFidPw&oe=664B3C3A&_nc_sid=10d13b",
+      postImage:imgURL,
+     
       likes: 54,
       timestamp: "2d",
     },
     {
       user: "HLT",
-      postImage:
-      "https://scontent.cdninstagram.com/v/t39.30808-6/441318901_18415423714064311_4260111182971927085_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYzMDgwOCJ9&_nc_ht=scontent.cdninstagram.com&_nc_cat=107&_nc_ohc=0wXdSVvl6hYQ7kNvgHCmLGF&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzM2Nzg0NjM4OTM2NjAzNjg2MQ%3D%3D.2-ccb7-5&oh=00_AYC27DE6bFr4YYdTZ93I-ouKZKqvA416HXxUZtT-VFidPw&oe=664B3C3A&_nc_sid=10d13b",
+      postImage:imgURL,
       likes: 432,
       timestamp: "2d",
     },
     {
       user: "HLT",
-      postImage:
-      "https://scontent.cdninstagram.com/v/t39.30808-6/441318901_18415423714064311_4260111182971927085_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYzMDgwOCJ9&_nc_ht=scontent.cdninstagram.com&_nc_cat=107&_nc_ohc=0wXdSVvl6hYQ7kNvgHCmLGF&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzM2Nzg0NjM4OTM2NjAzNjg2MQ%3D%3D.2-ccb7-5&oh=00_AYC27DE6bFr4YYdTZ93I-ouKZKqvA416HXxUZtT-VFidPw&oe=664B3C3A&_nc_sid=10d13b",
-      likes: 140,
+      postImage:imgURL,
+     
+      likes: 54,
       timestamp: "2d",
     },
     {
       user: "HLT",
-      postImage:
-      "https://scontent.cdninstagram.com/v/t39.30808-6/441318901_18415423714064311_4260111182971927085_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYzMDgwOCJ9&_nc_ht=scontent.cdninstagram.com&_nc_cat=107&_nc_ohc=0wXdSVvl6hYQ7kNvgHCmLGF&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzM2Nzg0NjM4OTM2NjAzNjg2MQ%3D%3D.2-ccb7-5&oh=00_AYC27DE6bFr4YYdTZ93I-ouKZKqvA416HXxUZtT-VFidPw&oe=664B3C3A&_nc_sid=10d13b",
-      likes: 14,
+      postImage:imgURL,
+      likes: 432,
       timestamp: "2d",
     },
+  
   ]);
 
   return (
