@@ -48,3 +48,6 @@
 .postIcon :hover {
   cursor: pointer;
 }
+.slick-dots{
+  display: none !important;
+}

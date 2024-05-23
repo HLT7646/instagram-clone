@@ -10,7 +10,8 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-
+import Card from '@mui/material/Card';
+import videoURL from "./video.mp4";
 function Post({ user, postImage, likes, timestamp }) {
   const [isLiked, setIsLiked] = useState(false);
 
@@ -44,6 +45,48 @@ function Post({ user, postImage, likes, timestamp }) {
               <img src={postImage} alt="Post Image" width={468} height={585} />
             ))}
           </Slider>
+        </div>
+        <div className="post__footer">
+          <div className="post__footerIcons">
+            <div className="post__iconsMain">
+              {isLiked ? (
+                <FavoriteIcon className="postIcon" onClick={handleLikeClick} />
+              ) : (
+                <FavoriteBorderIcon
+                  className="postIcon"
+                  onClick={handleLikeClick}
+                />
+              )}
+              <ChatBubbleOutlineIcon className="postIcon" />
+              <TelegramIcon className="postIcon" />
+            </div>
+            <div className="post__iconSave">
+              <BookmarkBorderIcon className="postIcon" />
+            </div>
+          </div>
+          <b>38,250 likes</b>
+        </div>
+      </div>
+      <div className="post">
+        <div className="post__header">
+          <div className="post__headerAuthor">
+            <Avatar style={{ marginRight: "10px" }}></Avatar>
+            {user} • <span>{timestamp}</span>
+          </div>
+          <MoreHorizIcon />
+        </div>
+        <div className="post__image">
+        <CardMedia
+        component="video"
+        src={videoURL}
+        controls
+        allow="autoPlay"
+        width={468}
+        height={585}
+        style={{
+          objectFit: 'cover',
+        }}
+      />
         </div>
         <div className="post__footer">
           <div className="post__footerIcons">
